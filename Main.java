@@ -23,6 +23,8 @@ class Main {
         }
     }
 
+    //question 3 : WAP to calculte the sum of the total element in aray
+
     }
 
 
