@@ -1,8 +1,9 @@
 
 class Main {
     public static void main(String[] args) {
-        printArray();
-        evenArray();
+        //printArray();
+       // evenArray();
+        sumOfArray();
     }
 
     public static  void printArray(){
@@ -24,6 +25,15 @@ class Main {
     }
 
     //question 3 : WAP to calculte the sum of the total element in aray
+    public static void sumOfArray(){
+        int arr[]={9,0,2,8,9,8,8,4,3};
+        int sum=0;
+        for (int i = 0; i < arr.length ; i++) {
+            sum=sum+arr[i];
+
+        }
+        System.out.println("The sum of array is" +sum);
+    }
 
     }
 
