@@ -1,22 +1,28 @@
 
 class Main {
     public static void main(String[] args) {
-        int n = 32; // Number of terms you want
-        int first = 0, second = 1;
+        printArray();
+        evenArray();
+    }
 
-        System.out.print("Fibonacci Series till " + n + " terms: ");
+    public static  void printArray(){
+        int arr[] = {1,2,3,4,5};
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+    }
+    public static void evenArray(){
+        int arr[] = {1,2,3,4,5,6,7,8,9};
 
-        for (int i = 1; i <= n; ++i) {
-            System.out.print(first + " ");
-
-            // compute the next term
-            int next = first + second;
-            first = second;
-            second = next;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]%2!=0){
+                System.out.println("odd numebr"+arr[i]);
+            }else {
+                System.out.println("even number is" +arr[i]);
+            }
         }
     }
 
     }
-
 
 
