@@ -1,10 +1,13 @@
+import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
         //printArray();
        // evenArray();
        // sumOfArray();
-        arrEle();
+       // arrEle();
+        arrExa3();
+
     }
 
     public static  void printArray(){
@@ -50,6 +53,20 @@ class Main {
             System.out.println(i);
             
         }
+    }
+    public static void arrExa3(){
+        int arr[]=new int[5];
+        Scanner kb=new Scanner(System.in);
+        System.out.println("Enter the numbers:");
+        for (int i = 0; i <arr.length ; i++) {
+            arr[i]=kb.nextInt();
+
+        }
+        System.out.println("here is the enterd numbers:");
+        for(int i : arr){
+            System.out.println(i);
+        }
+
     }
 
     }
